@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Playful Pastel Palette */
+  --bg-cream: #fffdf5;
+  --bg-mint: #e0f2fe;
+  --bg-lilac: #f3e8ff;
+
+  --accent-primary: #3b82f6;
+  /* Bright Blue */
+  --accent-secondary: #8b5cf6;
+  /* Playful Purple */
+  --accent-pop: #f43f5e;
+  /* Pop Red/Pink */
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+
+  --background: var(--bg-cream);
+  --foreground: var(--text-main);
+
+  /* Custom Ease: "Bouncy but Calm" */
+  --ease-playful: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Custom Utilities for smooth scrolling feel if needed */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
